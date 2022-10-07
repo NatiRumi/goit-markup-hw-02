@@ -1,0 +1,64 @@
+:root {
+    --primary-text-color: rgb();
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: Roboto, sans-serif;
+    color: #757575;
+}
+
+Li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* logo */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 3%;  
+    line-height: 1,17;   
+    color: #000000;
+}
+
+.logo>span {
+    color: #2196f3;
+}
+
+
+/* navigation */
+.site-nav  a {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2%;
+    line-height: 1,17;
+    color: #212121;
+}
+
+.auth-nav  a {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2%;
+    line-height: 1,17;
+    color: #757575;
+}
+
+
+/* hero */
+.hero {
+    background-color: #757575;
+}
+
+.hero>h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36;
+    letter-spacing: 6%;  
+    color: #ffffff;
+    text-transform: uppercase;
+}
