@@ -1,19 +1,17 @@
 :root {
-    --primary-text-color: rgb();
+    --text-color: #757575;
+    --brend-color: #2196f3;
+    --logo-color: #000000;
+    --title-color: #212121;
+    --button-color: #ffffff;
 }
 
 body {
     background-color: #F5F5F5;
     font-family: Roboto, sans-serif;
-    color: #757575;
-}
-
-Li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--text-color);
 }
 
 /* logo */
@@ -21,33 +19,44 @@ a {
     font-family: Raleway, sans-serif;
     font-size: 26px;
     font-weight: 700;
-    letter-spacing: 3%;  
-    line-height: 1,17;   
-    color: #000000;
+    letter-spacing: 0.78px;  
+    line-height: 1.17;   
+    color: var(--logo-color);
 }
 
 .logo>span {
-    color: #2196f3;
+    color: var(--brend-color);
 }
 
 
 /* navigation */
-.site-nav  a {
+.site-nav a{
     font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 2%;
-    line-height: 1,17;
-    color: #212121;
+    letter-spacing: 0.28px;
+    line-height: 1.17;
+    color: var(--title-color);
 }
 
-.auth-nav  a {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 2%;
-    line-height: 1,17;
-    color: #757575;
+.site-nav a:focus,
+.site-nav a:hover {
+    color: var(--brend-color);
 }
 
+.site-nav a.current {
+    color: var(--brend-color);
+}
+
+.auth-nav a {
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    line-height: 1.17;
+    color: var(--text-color);
+}
+
+.auth-nav a:focus,
+.auth-nav a:hover {
+    color: var(--brend-color);
+}
 
 /* hero */
 .hero {
@@ -57,8 +66,118 @@ a {
 .hero>h1 {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,36;
-    letter-spacing: 6%;  
-    color: #ffffff;
+    line-height: 1.36;
+    letter-spacing: 2.64px;  
+    color: var(--button-color);
     text-transform: uppercase;
+    text-align: center;
+}
+
+.button {
+    color: var(--button-color);
+    background-color: var(--brend-color);
+    width: 216px;
+    height: 50px;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+}
+
+
+/* feature */
+.feature  h3 {
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+
+.feature  p {
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+/* work + team */
+.work h2, 
+.team h2 {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    color: var(--title-color);
+}
+
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    color: var(--title-color);
+}
+
+.team p {
+    font-size: 16px;
+    letter-spacing: 0.48px;
+}
+
+/* footer */
+footer {
+    background-color: #2f303a;
+}
+
+.logo.footer {
+    color: var(--button-color);
+}
+
+address  a {
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    color: var(--button-color);
+    font-style: normal;
+}
+
+address a:focus,
+address a:hover {
+    color: var(--brend-color);
+}
+
+
+/* portfolio */
+.filter  button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.48px;
+    color: var(--title-color); 
+    background-color: #F5F4FA; 
+    cursor: pointer;
+}
+
+.filter button:focus,
+.filter button:hover {
+    color: var(--button-color);
+    background-color: var(--brend-color);
+}
+
+.carg  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    color: var(--title-color);
+}
+
+.carg  p {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.48px;
+}
+
+Li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
